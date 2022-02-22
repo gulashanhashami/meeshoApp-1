@@ -1,0 +1,60 @@
+.signUp-body {
+  font-family: Mier demi;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(253, 236, 237);
+  height: 100vh;
+}
+#signUp-container {
+  margin: auto;
+  width: 30%;
+  height: 80vh;
+  border: 1px solid red;
+  background-color: white;
+}
+.img-div {
+  width: 100%;
+  height: 40vh;
+}
+.img-div > img {
+  width: 100%;
+  height: 100%;
+}
+.input-div-container {
+  width: 80%;
+  margin: auto;
+}
+/* .phone-div {
+} */
+.phone-div {
+  width: 100%;
+  font-size: 18px;
+}
+.phone-div label {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+}
+.phone-div input {
+  margin-left: 3%;
+  width: 80%;
+  color: #404040;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  border: none;
+}
+
+.otp-btn {
+  margin-top: 7%;
+  width: 100%;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(244, 51, 151);
+  padding: 3%;
+  border-radius: 0.5vmax;
+  border: none;
+}
