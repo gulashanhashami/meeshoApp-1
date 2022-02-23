@@ -43,8 +43,21 @@ export default function App() {
     // let otp = e.target.value
     // setOTP(otp)
     if(OTP.length ===6){
+      let confirmationResult = window.confirmationResult
+
+     
+      confirmationResult.confirm(OTP).then((result) => {
+      // User signed in successfully.
+       const user = result.user;
+       console.log(user)
+      // ...
       alert("SignIn successfull")
-      console.log("dilsad")
+      }).catch((error) => {
+      // User couldn't sign in (bad verification code?)
+     // ...
+     alert("Enter Correct OTP")
+     console.log(error)
+     });
     }
   }
   return (
