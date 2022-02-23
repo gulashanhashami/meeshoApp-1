@@ -1,0 +1,40 @@
+.container {
+  margin: auto;
+  width: 80vw;
+}
+.form-group {
+  margin-bottom: 2em;
+  transition: all 0.3s;
+}
+.form-label {
+  font-size: 1em;
+  display: block;
+  color: #aaa;
+  opacity: 1;
+  transform: translateY(-1.75em);
+  transition: all 0.3s;
+}
+.form-control {
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 0px;
+  border-color: #ccc;
+  border-style: none none solid none;
+  transform-origin: scale(0, 0);
+  transition: all 0.5s;
+}
+.form-control::placeholder {
+  color: transparent;
+}
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: orange;
+}
+.form-group:focus-within {
+  transform: scale(1.05, 1.05);
+}
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label {
+  transform: translateY(-2.5em);
+}
