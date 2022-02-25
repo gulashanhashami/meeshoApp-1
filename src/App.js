@@ -83,13 +83,13 @@
 import React from "react";
 import { Login } from "./components/authentication/login/LogIn";
 import { SignUp } from "./components/authentication/signUp/SignUp";
-import { Home } from "./components/home/Home";
+import { Home } from "./components/home/home";
 
  function App() {
   return <div>
      <Login/>
      <SignUp/>
-     <Home/>
+     
   </div>
    
   
