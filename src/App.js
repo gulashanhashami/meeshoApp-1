@@ -1,50 +1,16 @@
-// import React, { useState } from 'react'
-// import { authentication } from './firebase'
-// import {RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
-// export default function App() {
 
-//   const countryCode = "+91";
-//   const [phoneNumber, setPhoneNumber] = useState(countryCode)
-//   const [exandForm, setExpandForm] = useState(false)
-//   const [OTP, setOTP] = useState("")
-//   const generateRecaptcha = ()=>{
-//     window.recaptchaVerifier = new RecaptchaVerifier('sign-in-button', {
-//       'size': 'invisible',
-//       'callback': (response) => {
-//         // reCAPTCHA solved, allow signInWithPhoneNumber.
-        
-//       }
-//     },  authentication);
-//   }
-//   const requestOTP = (e)=>{
-//     e.preventDefault()
-//     if(phoneNumber.length >=12){
-//       console.log(phoneNumber)
-//       setExpandForm(true);
-//       generateRecaptcha()
-//       let appVerifier = window.recaptchaVerifier
-//       signInWithPhoneNumber(authentication, phoneNumber, appVerifier)
-//       .then((confirmationResult) => {
-//         // SMS sent. Prompt user to type the code from the message, then sign the
-//         // user in with confirmationResult.confirm(code).
-//         window.confirmationResult = confirmationResult;
-//         // ...
-//         console.log("OTP has been sent on this number")
-//       }).catch((error) => {
-//         // Error; SMS not sent
-//         // ...
-//         console.log(error)
-//       });
-//     }
-//   }
+// import React from "react";
+// import { Login } from "./components/authentication/login/LogIn";
+// import {Product} from "./components/productdetails/productdetails"
+// import {Home} from './components/home/Home'
 
-//   const verifyOTP = (e)=>{
-//     e.preventDefault()
-//     // let otp = e.target.value
-//     // setOTP(otp)
-//     if(OTP.length ===6){
-//       let confirmationResult = window.confirmationResult
-
+//  function App() {
+//   return <div>
+//     {/* <Product/>
+//      <Login/> */}
+    
+//    <Home/>
+  
      
 //       confirmationResult.confirm(OTP).then((result) => {
 //       // User signed in successfully.
@@ -93,7 +59,31 @@ import { Navbar } from "./components/navbar/Navbar";
      <SignUp/>
      <Home/> */}
   </div>
+ }
+// </div>
    
   
-}
-export default App
+// }
+// export default App
+
+
+// import './App.css';
+// import { Home } from './components/home/Home';
+// import {
+//     BrowserRouter as Router,
+//     Routes,
+//     Route
+//   } from "react-router-dom";
+
+
+// function App() {
+//   return (
+//     <div >
+//       <Routes>
+//             <Route path='/' element={<Home/>} />
+//       </Routes>
+//     </div>
+//   );
+// }
+
+// export default App;
