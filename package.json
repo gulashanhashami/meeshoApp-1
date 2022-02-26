@@ -15,12 +15,7 @@
     "firebase": "^9.6.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-<<<<<<< HEAD
     "react-fontawesome": "^1.7.1",
-=======
-
-
->>>>>>> 09c7198db3ffe263f0f7aa7998cd1f4588916556
     "react-redux": "^7.2.6",
 
     "react-router-dom": "^6.2.1",
