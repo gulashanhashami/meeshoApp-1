@@ -1,10 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .navbar-div {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
   border: 1px solid blue;
 }
 .navbar-div > div {
   flex: 1 2 auto;
+}
+.navbar-div > div:nth-child(1) img {
+  width: 15vw;
+}
+
+.cart-products {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  gap: 5%;
+}
+.cart-item {
+  width: 65%;
+  /* height: 60vh; */
+  border: 1px solid red;
+}
+.content-div {
+  line-height: 2;
+}
+
+.product-details {
+  display: flex;
+  gap: 10%;
+  margin: 5% 0 3% 0;
+  font-family: "Mier demi" - 600;
+  font-weight: 600;
+  font-size: 20px;
+  color: #8f8a8a;
+}
+.product-details > div {
+  border: 1px solid red;
+}
+.img-div {
+  width: 7vmax;
+}
+.img-div > img {
+  width: 100%;
+}
+.edit {
+  color: #f43397;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.price-div {
+  width: 30%;
+  /* height: 60vh; */
+  border: 1px solid blue;
+  line-height: 2;
+}
+.price-div > p {
+  color: #333333;
+  font-size: 30px;
+}
+.price-div-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  color: #8f8a8a;
+}
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  color: #333333;
+  font-size: 30px;
+}
+.continue-btn {
+  font-size: 30px;
+  width: 100%;
+  border: none;
+  background-color: #f43397;
+  color: white;
+  padding: 4%;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+.btn-img-div {
+  width: 100%;
+}
+.btn-img-div > img {
+  width: 100%;
 }
