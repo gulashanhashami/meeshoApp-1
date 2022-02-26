@@ -1,7 +1,7 @@
 import React from 'react'
-import "./productdetails.css"
+import "./Productdetails.css"
 
-export const Product = () => {
+export const Productdetails = () => {
     return (
         <>
         <div className='complete_page'>

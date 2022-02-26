@@ -1,33 +1,29 @@
-import {ReactComponent as CartLogo} from '../../svg/cartLogoIcon.svg'
-import styles from "./CartNavbar.module.css"
-// import { useHistory } from "react-router-dom";
-
-const details = [
-    "Cart", "Address", "Payment", "Summary"
-];
-
-
-const CartNavbar = ({ active=1 }) => {
-    // const history = useHistory();
-
-    return (
-        <div className={styles.root}>
-            <div className={styles.logo}>  
-            {/* onClick={()=> history.push("/")} */}
-                <CartLogo />
+import './CartNavbar.css'
+import { Stepper, Step, StepLabel } from '@mui/material';
+import Box from '@mui/material/Box';
+import { useState } from 'react';
+export const CartNavbar = ()=>{
+    const st = ["Cart","Address", "Payment", "Summary" ];
+    const [steps, setSteps]  = useState(st)
+    return <>
+        <div className='navbar-div'>
+            <div className='logo-div'>
+                <h1>meesho</h1>
             </div>
-            <ul className={styles.list}>
-                {
-                    details.map( (stage, ind) => (
-                        <li key={ind*2012} className={`${ind + 1 <= active ? styles.activeListItem : styles.listItem} ${ ind=== 0 ? styles.firstChild : ""}`  }>
-                            <div>{ind + 1}</div>
-                            <div>{stage}</div>
-                        </li>
-                    ))
-                }
-            </ul>
+            <div className='step-div'>
+            <Box style={{ border:"1px solid red"}}>
+   <Stepper activeStep={1} alternativeLabel>
+  {steps.map((label) => (
+    <Step key={label}>
+      <StepLabel>{label}</StepLabel>
+    </Step>
+  ))}
+</Stepper>
+   </Box>
+            </div>
+   <div className='empty-div'>
+      
+   </div>
         </div>
-    )
-};
-
-export default CartNavbar;
+    </>
+}

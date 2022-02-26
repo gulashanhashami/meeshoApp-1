@@ -1,0 +1,10 @@
+.navbar-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid blue;
+}
+.navbar-div > div {
+  flex: 1 2 auto;
+}

@@ -1,8 +1,9 @@
 
-// import React from "react";
-// import { Login } from "./components/authentication/login/LogIn";
-// import {Product} from "./components/productdetails/productdetails"
-// import {Home} from './components/home/Home'
+import './App.css';
+import { Home } from './components/home/Home';
+// import {Routes,Route} from "react-router-dom";
+import {Productdetails} from './components/productdetails/Productdetails'
+
 
 //  function App() {
 //   return <div>
@@ -95,3 +96,18 @@ export default App
 // }
 
 // export default App;
+
+import {CartNavbar} from './components/cart/CartNavbar'
+function App() {
+  return (
+    <div >
+      <CartNavbar/>
+      
+      {/* <Routes>
+            <Route path='/' element={<Home/>} />
+      </Routes> */}
+      {/* <Productdetails/> */}
+    </div>
+  );
+}
+
