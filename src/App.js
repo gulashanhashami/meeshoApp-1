@@ -12,30 +12,78 @@
 //    <Home/>
   
      
-//   </div>
+//       confirmationResult.confirm(OTP).then((result) => {
+//       // User signed in successfully.
+//        const user = result.user;
+//        console.log(user)
+//       // ...
+//       alert("SignIn successfull")
+//       }).catch((error) => {
+//       // User couldn't sign in (bad verification code?)
+//      // ...
+//      alert("Enter Correct OTP")
+//      console.log(error)
+//      });
+//     }
+//   }
+
+//   return (
+//     <div>
+//         return <div>
+//         <form onSubmit={requestOTP}>
+//           <div id='sign-in-button'></div>
+//             <input type="mobile" name="mobile" placeholder="enter number" value={phoneNumber} onChange={(e)=>{
+//               setPhoneNumber(e.target.value)
+//             }}/>
+//             <button>Submit</button>
+//         </form>
+//         <form onSubmit={verifyOTP}>
+//             <input type="number" name="otp" placeholder="enter otp" value={OTP} onChange={(e)=>setOTP(e.target.value)}/>
+//             <button>Submit</button>
+//         </form>
+//     </div>
+//     </div>
+//   )
+// }
+
+import React from "react";
+import { Login } from "./components/authentication/login/LogIn";
+import { SignUp } from "./components/authentication/signUp/SignUp";
+import { Home } from "./components/home/Home";
+import { Navbar } from "./components/navbar/Navbar";
+
+ function App() {
+  return <div>
+     <Navbar />
+     {/* <Login/>
+     <SignUp/>
+     <Home/> */}
+  </div>
+ }
+// </div>
    
   
 // }
 // export default App
 
 
-import './App.css';
-import { Home } from './components/home/Home';
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route
-  } from "react-router-dom";
+// import './App.css';
+// import { Home } from './components/home/Home';
+// import {
+//     BrowserRouter as Router,
+//     Routes,
+//     Route
+//   } from "react-router-dom";
 
 
-function App() {
-  return (
-    <div >
-      <Routes>
-            <Route path='/' element={<Home/>} />
-      </Routes>
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <div >
+//       <Routes>
+//             <Route path='/' element={<Home/>} />
+//       </Routes>
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
