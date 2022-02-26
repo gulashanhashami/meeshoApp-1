@@ -1100,7 +1100,7 @@
       display: flex;
       gap: 1rem;
       margin: auto;
-      background-color: #F9F9F9;
+      background-color: rgb(229, 229, 230);
       justify-content:space-around;
       padding-left: 80px;
   }
