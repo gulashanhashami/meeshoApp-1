@@ -47,24 +47,32 @@
 // }
 
 import React from "react";
-import { Login } from "./components/authentication/login/LogIn";
-import { SignUp } from "./components/authentication/signUp/SignUp";
-import { Home } from "./components/home/Home";
+import { Routes, Route } from "react-router-dom";
+// import { Login } from "./components/authentication/login/LogIn";
+// import { SignUp } from "./components/authentication/signUp/SignUp";
+// import { Home } from "./components/home/Home";
+import {Product} from "./components/Product";
 import { Navbar } from "./components/navbar/Navbar";
 
  function App() {
   return <div>
-     <Navbar />
+     
      {/* <Login/>
      <SignUp/>
      <Home/> */}
+     <Routes>
+     <Route path="/" element={<Navbar />}></Route>
+
+     <Route path="/product" element={<Product/>}></Route>
+
+     </Routes>
   </div>
  }
 // </div>
    
   
 // }
-// export default App
+export default App
 
 
 // import './App.css';
