@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, "Helvetica Neue", sans-serif, "Mier Book";
+}
+.signUp-body {
+  font-family: Mier demi;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(253, 236, 237);
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#signUp-container {
+  margin: auto;
+  width: 30%;
+  height: 80vh;
+
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.img-div {
+  width: 100%;
+  height: 30vh;
+}
+.img-div > img {
+  width: 100%;
+  height: 100%;
+}
+
+#input-all {
+  display: flex;
+}
+
+.input-div {
+  margin: 20px 0 0 30px;
+}
+.input-div-content {
+  margin: 10% auto;
+  font-size: 20px;
+  font-family: Mier bold;
+  color: #333333;
+  font-weight: 700;
+}
+
+.input-div-main {
+  width: 80%;
+  margin: auto;
+}
+
+.otp-btn {
+  margin-top: 7%;
+  width: 100%;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(244, 51, 151);
+  padding: 3%;
+  border-radius: 0.5vmax;
+  border: none;
+}
+.span-div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* input animation */
+.container {
+  margin: auto;
+}
+.form-group {
+  margin-bottom: 2em;
+  transition: all 0.3s;
+}
+.form-label {
+  font-size: 1em;
+  display: block;
+  color: #aaa;
+  opacity: 1;
+  transform: translateY(-1.75em);
+  transition: all 0.3s;
+}
+.form-control {
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.01);
+  border-radius: 0px;
+  /* border-color: rgb(244, 51, 151); */
+  border-style: none none solid none;
+  transform-origin: scale(0, 0);
+  transition: all 0.5s;
+}
+.form-control::placeholder {
+  color: transparent;
+}
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: rgb(244, 51, 151);
+}
+.form-group:focus-within {
+  transform: scale(1.05, 1.05);
+}
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label {
+  transform: translateY(-2.5em) scale(0.8);
+  color: rgb(244, 51, 151);
+}
