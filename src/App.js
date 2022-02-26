@@ -84,12 +84,14 @@ import React from "react";
 import { Login } from "./components/authentication/login/LogIn";
 import { SignUp } from "./components/authentication/signUp/SignUp";
 import { Home } from "./components/home/Home";
+import { Navbar } from "./components/navbar/Navbar";
 
  function App() {
   return <div>
-     <Login/>
+     <Navbar />
+     {/* <Login/>
      <SignUp/>
-     <Home/>
+     <Home/> */}
   </div>
    
   
