@@ -59,6 +59,7 @@ export function LogIn() {
        const user = result.user;
        console.log(user)
       // ...
+      alert("Login Successful")
       navigate("/")
       }).catch((error) => {
       // User couldn't sign in (bad verification code?)
