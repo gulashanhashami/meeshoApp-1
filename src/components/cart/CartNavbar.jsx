@@ -1,10 +1,29 @@
 import './CartNavbar.css'
+import {useParams} from "react-router-dom"
+import {useState,useEffect} from "react"
+import axios from "axios"
 import { Stepper, Step, StepLabel } from '@mui/material';
 import Box from '@mui/material/Box';
-import { useState } from 'react';
+import { Navigate, Link } from 'react-router-dom';
+import {Address} from '../address/Address'
 export const CartNavbar = ()=>{
     const st = ["Cart","Address", "Payment", "Summary" ];
     const [steps, setSteps]  = useState(st)
+    const  {id} =useParams()
+    const [data,setData]=useState([])
+    const [image,setImage]=useState([])
+    
+    
+  useEffect(()=>{
+    axios.get(`https://meesho-clone-123.herokuapp.com/proudcts/${id}`)
+.then(({data})=>{
+  
+  setData(data)
+  setImage(data.images)
+  })
+  },[])
+  localStorage.setItem("productPrice", JSON.stringify(data.discounted_price))
+  // console.log("AmitGf", data.images[0])
     return <>
        <div id="navbar-main">
          <div className='navbar-div'>
@@ -31,12 +50,12 @@ export const CartNavbar = ()=>{
               </div>
               <div className='product-details'>
                   <div className='img-div'>
-                    <img src="https://meesho.com/_next/image?url=https%3A%2F%2Fimages.meesho.com%2Fimages%2Fproducts%2F40788593%2Fzmdup_512.jpg&w=1920&q=75" alt="" />
+                    <img src={image[0]} alt="" />
                   </div>
                   <div className='content-div'>
-                    <h5>Skylark New Luxury Black Pair Watch Analog</h5>
+                    <h5>{data.title}</h5>
                     <span>Size: Free Size</span> <span>Qty: 1</span>
-                    <h4>₹368</h4>
+                    <h4>₹ {data.discounted_price}</h4>
                   </div>
                   <div className='edit'>Edit</div>
               </div>
@@ -46,7 +65,7 @@ export const CartNavbar = ()=>{
               <p>Price Details</p>
                <div className='price-div-list'>
                  <div>Product Charges</div>
-                 <div>&#x20B9; 482</div>
+                 <div>&#x20B9; {data.discounted_price}</div>
                </div>
                <div className='price-div-list'>
                  <div>Delivery Charges</div>
@@ -62,10 +81,12 @@ export const CartNavbar = ()=>{
                </div>
                <div className='total-price'>
                  <p>Order Total</p>
-                 <p> &#x20B9; 382</p>
+                 <p> &#x20B9; {data.discounted_price -100}</p>
                </div>
                   <div style={{textAlign:"center", color:"gray"}}>Clicking on ‘Continue’ will not deduct any money</div>
+                  <Link to="/address">
                   <button className='continue-btn'>Continue</button>
+                  </Link>
                   <div className='btn-img-div'>
                     <img src="https://images.meesho.com/images/marketing/1588578650850.png" alt="" />
                   </div>
@@ -74,3 +95,5 @@ export const CartNavbar = ()=>{
       </div>
     </>
 }
+
+

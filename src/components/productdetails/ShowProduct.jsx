@@ -7,17 +7,21 @@ import "./productdetails.css"
 import "./Product.css"
 import { LoadingWrapper } from './loading/LoadingWrapper'
 import { Dot } from './loading/Dot'
+import {Navbar} from '../navbar/Navbar'
+import { Link } from "react-router-dom";
 export const ShowProduct=()=>{
   const  {id} =useParams()
   const [data,setData]=useState([])
+  console.log("dils", data)
   const [image,setImage]=useState([])
   const [detail,setDetail]=useState({})
   const [n,setN]=useState(0)
   const [loading,setLoading]=useState(true)
+
 //   console.log(id)
 
   useEffect(()=>{
-    axios.get(`http://www.localhost:2000/proudcts/${id}`)
+    axios.get(`https://meesho-clone-123.herokuapp.com/proudcts/${id}`)
 .then(({data})=>{
   
   setData(data)
@@ -27,9 +31,10 @@ export const ShowProduct=()=>{
   })
   },[])
 
-  console.log(detail)
+  console.log("Amit",data._id)
   return (loading==false)?(
     <>
+    <Navbar/>
     <div className='complete_page'>
             <div className='left_side'>
                 <div className='left_small'>
@@ -45,7 +50,10 @@ export const ShowProduct=()=>{
                     <img src={image[n]} alt=""/>
                     </div>
                     <div className='left_big_p'>
+                        
+                        <Link to={`/addToCart/${data._id}`}>
                         <button className='Add_to_card'>Add To Cart</button>
+                        </Link>
                         <hr />
                         <p>1 Similar Products</p>
                         <img className='small_image' src="https://images.meesho.com/images/products/35729859/tp8k4_512.jpg" />

@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./home.module.css";
 import {Link} from 'react-router-dom'
-
+import {Navbar} from '../navbar/Navbar'
 
 
 export const  Home = ()=>{
     return (
         <div>
+            <Navbar/>
             <div className={styles.banner}>
                 <div className={styles.container}>
                     <div className={styles.title}>
@@ -103,9 +104,9 @@ export const  Home = ()=>{
                     <h4>Contact Us</h4>
                     <p>query@meesho.com</p>
                 </div>
-                <div>
+                <div className="social-div">
                     <h4>Reach out to us</h4>
-                    <img src="https://meesho.com/assets/instagram.png"/>
+                    {/* <img src="https://meesho.com/assets/instagram.png"/> */}
                 </div>
             </div>
             <div className={styles.footer}>

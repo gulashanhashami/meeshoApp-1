@@ -1,5 +1,5 @@
 
-import { Link } from "react-router-dom";
+import { Link , Navigate} from "react-router-dom";
 import styled from "styled-components";
 import {useState} from "react";
 import './Navbar.css';
@@ -31,7 +31,7 @@ export const Navbar = () => {
          <div id="navbar"> 
          <div id="di"><img className="mlogo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvxBx_qV2aTUPJ_faUXY0jSHYgkOaW6l-9bDo1uRllHveesA1MNFu6Ne8QOEaEo29rqQ&usqp=CAU" alt="" srcset="" />
         
-    <input id="inps"  type="text" placeholder="Try Saree,Kurti or Search by Product Code" />
+         <input id="inps"  type="text" placeholder="Try Saree,Kurti or Search by Product Code" />
 
          <Search className="searchb" />
          </div> 
@@ -43,16 +43,22 @@ export const Navbar = () => {
          <div id="mob">
              </div>
          <div className="line"></div>
+         <div>
          <p className="text1">Become Supplier</p>
+         </div>
          <div className="line"></div>
+         <Link to= "/login">
          <div className="navprofile">     
          <PersonOutlineRounded className="prof"  />
          <p className="person">Profile</p>
          </div>
-         <div className="cart">
+         </Link>
+         <Link to="/cart">
+         <div className="cart"> 
              <ShoppingCartOutlined  className="cartlogo"/>
              <p id="car">Cart</p>
          </div>
+         </Link>
          </div>
       </div>
       
@@ -60,7 +66,7 @@ export const Navbar = () => {
           <p className="texthover" id="eth" onMouseEnter={(e) => {
               setDrop(true)
             displayNone(e)
-          }} onMouseLeave={() => setDrop(false)}>Women Ethnic</p>
+          }} onMouseLeave={() => setDrop(true)}>Women Ethnic</p>
           <p className="texthover" onMouseEnter={() => setDrop1(true)} onMouseLeave={() => setDrop1(false)}>Women Western</p>
           <p className="texthover" onMouseEnter={() => setDrop2(true)} onMouseLeave={() => setDrop2(false)}>Jewelleries & Accessories</p>
           <p className="texthover" onMouseEnter={() => setDrop3(true)} onMouseLeave={() => setDrop3(false)}>Men</p>

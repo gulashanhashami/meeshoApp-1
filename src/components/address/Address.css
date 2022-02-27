@@ -103,3 +103,32 @@
 .btn-img-div > img {
   width: 100%;
 }
+/* adding css */
+#left {
+  float: left;
+  margin-left: 30%;
+  margin-top: 15px;
+  padding-left: 15px;
+  width: 70%;
+  /* height:500px; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+h3 {
+  margin-left: 30%;
+}
+input {
+  width: 97%;
+  height: 40px;
+  margin-top: 15px;
+}
+.city {
+  width: 49%;
+}
+#btn {
+  margin-top: 50px;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid #f43397;
+  background-color: #f43397;
+}

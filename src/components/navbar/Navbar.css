@@ -6,25 +6,28 @@
   display: flex;
   justify-content: space-between;
   /* text-content:center; */
-  height: 75px;
+  /* height: 75px; */
   background-color: white;
   border: 1px solid grey;
+  position: sticky;
+  top: 0;
 }
 #di {
   width: 45%;
   /* // height:70px; */
   display: flex;
-  /* // border:1px solid red; */
+  /* border: 1px solid red; */
   justify-content: space-between;
 }
 .mlogo {
-  height: 47px;
+  width: 20%;
+  height: 5vh;
   margin-top: 18px;
   margin-left: 30px;
 }
 #inps {
   width: 65%;
-  height: 45px;
+  /* height: 45px; */
   margin-top: 15px;
   margin-left: 20px;
   outline: none;
@@ -38,25 +41,25 @@
   position: relative;
   margin-left: 10px;
   top: 28px;
-  left: -62%;
+  left: -65%;
 }
-.phone {
-  margin-top: 20px;
-}
+
 .r {
   width: 42%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   /* // height:70px;
     // border:1px solid red; */
 }
 .text {
-  margin-top: 25px;
+  /* margin-top: 25px; */
   margin-left: 10px;
   color: black;
 }
 .text1 {
-  margin-top: 25px;
-  margin-left: 35px;
+  margin-top: 20px;
+  /* margin-left: 35px; */
   color: black;
 }
 .line {
@@ -82,6 +85,7 @@
   margin-left: 35px;
   display: grid;
   margin-top: 10px;
+  cursor: pointer;
   /* //  border:1px solid red; */
 }
 #car {
@@ -100,6 +104,7 @@
   margin-left: 35px;
   display: grid;
   margin-top: 10px;
+  cursor: pointer;
   /* //  border:1px solid red; */
 }
 

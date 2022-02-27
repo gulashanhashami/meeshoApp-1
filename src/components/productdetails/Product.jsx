@@ -6,13 +6,14 @@ import {useState,useEffect} from "react"
 import {Link } from "react-router-dom"
 import { LoadingWrapper } from './loading/LoadingWrapper'
 import { Dot } from './loading/Dot'
+import {Navbar} from '../navbar/Navbar'
 export const Product=()=>{
   const [data,setData]=useState([])
   const [page,setPage]=useState(1)
   const [loading,setLoading]=useState(true)
 
   useEffect(()=>{
-    axios.get(`http://www.localhost:2000/proudcts?page=${page}&size=20`)
+    axios.get(`https://meesho-clone-123.herokuapp.com/proudcts?page=${page}&size=20`)
 .then((data)=>{
   setData(data.data.product)
   setLoading(false)
@@ -20,6 +21,7 @@ export const Product=()=>{
   },[page])
   return (loading==false)?(
     <div className="productPage">
+      <Navbar/>
       <h1 className="productPageHeading">Women Dresses</h1>
       <span className="productSubheading">Showing 1-20 </span>
       <span className="productSubheading2">out of 59964 Products</span>

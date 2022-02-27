@@ -3,35 +3,15 @@ import signUp_img from '../../../images/signUp-img.jpg'
 import  { useState} from 'react'
 import {authentication} from '../../../firebase'
 import {RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
-
-export function Login() {
+import { useNavigate } from 'react-router-dom';
+import { Navbar } from '../../navbar/Navbar';
+export function LogIn() {
 
   const countryCode = "+91";
   const [phoneNumber, setPhoneNumber] = useState(countryCode)
   const [exandForm, setExpandForm] = useState(true)
   const [OTP, setOTP] = useState("")
-//
-// const [resend, setResend] = useState(60)
-// const count_ref = useRef()
-//   useEffect(()=>{
-//         ResendOTP()
-     
-//   },[])
 
-
-//  const ResendOTP = ()=>{
-//  count_ref.current =  setInterval(()=>{
-//       setResend((p)=>p-1)
-//   },1000)
- 
-// }
-// if(resend === 0){
-//   clearInterval(count_ref.current)
-// }
-
-
-
-//
   const generateRecaptcha = ()=>{
     window.recaptchaVerifier = new RecaptchaVerifier('sign-in-button', {
       'size': 'invisible',
@@ -41,7 +21,7 @@ export function Login() {
       }
     },  authentication);
   }
-
+ let navigate = useNavigate()
 
   const requestOTP = (e)=>{
     e.preventDefault()
@@ -79,7 +59,7 @@ export function Login() {
        const user = result.user;
        console.log(user)
       // ...
-      alert("SignIn successfull")
+      navigate("/")
       }).catch((error) => {
       // User couldn't sign in (bad verification code?)
      // ...
@@ -119,8 +99,9 @@ export function Login() {
          </div>
     </div>
  </div>
-  
+
  :
+ 
   <div className='signUp-body'>
   <div id="signUp-container">
    <div className="img-div">
