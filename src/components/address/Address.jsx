@@ -1,8 +1,9 @@
-import './CartNavbar.css'
+
+import './Address.css'
 import { Stepper, Step, StepLabel } from '@mui/material';
 import Box from '@mui/material/Box';
 import { useState } from 'react';
-export const CartNavbar = ()=>{
+export const Address = ()=>{
     const st = ["Cart","Address", "Payment", "Summary" ];
     const [steps, setSteps]  = useState(st)
     return <>
@@ -26,21 +27,7 @@ export const CartNavbar = ()=>{
         </div>
         <div className='cart-products'>
             <div className='cart-item'>
-              <div>
-              <span className="span">Cart</span> <span className="span span-color">|1 Item</span>
-              </div>
-              <div className='product-details'>
-                  <div className='img-div'>
-                    <img src="https://meesho.com/_next/image?url=https%3A%2F%2Fimages.meesho.com%2Fimages%2Fproducts%2F40788593%2Fzmdup_512.jpg&w=1920&q=75" alt="" />
-                  </div>
-                  <div className='content-div'>
-                    <h5>Skylark New Luxury Black Pair Watch Analog</h5>
-                    <span>Size: Free Size</span> <span>Qty: 1</span>
-                    <h4>₹368</h4>
-                  </div>
-                  <div className='edit'>Edit</div>
-              </div>
-              <h3 style={{fontSize:"18px", color:"grey"}}>Supplier : SHIVAM ENTERPRISES SUP</h3>
+            <h1>Contact Details</h1>
             </div>
             <div className='price-div'>
               <p>Price Details</p>

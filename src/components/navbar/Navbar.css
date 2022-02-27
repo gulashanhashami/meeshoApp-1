@@ -1,0 +1,204 @@
+/* font-family: sans-serif; */
+#navbar {
+  margin: auto;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  /* text-content:center; */
+  height: 75px;
+  background-color: white;
+  border: 1px solid grey;
+}
+#di {
+  width: 45%;
+  /* // height:70px; */
+  display: flex;
+  /* // border:1px solid red; */
+  justify-content: space-between;
+}
+.mlogo {
+  height: 47px;
+  margin-top: 18px;
+  margin-left: 30px;
+}
+#inps {
+  width: 65%;
+  height: 45px;
+  margin-top: 15px;
+  margin-left: 20px;
+  outline: none;
+  font-size: 15px;
+  color: grey;
+  font-weight: 500;
+  padding-left: 7%;
+}
+.searchb {
+  /* // border:1px solid grey; */
+  position: relative;
+  margin-left: 10px;
+  top: 28px;
+  left: -62%;
+}
+.phone {
+  margin-top: 20px;
+}
+.r {
+  width: 42%;
+  display: flex;
+  /* // height:70px;
+    // border:1px solid red; */
+}
+.text {
+  margin-top: 25px;
+  margin-left: 10px;
+  color: black;
+}
+.text1 {
+  margin-top: 25px;
+  margin-left: 35px;
+  color: black;
+}
+.line {
+  width: 2px;
+  height: 40px;
+  margin-left: 35px;
+  margin-top: 15px;
+  background-color: grey;
+}
+.person {
+  font-size: 15px;
+  color: black;
+}
+.prof {
+  margin-left: 7px;
+}
+.cartlogo {
+  margin-left: 5px;
+}
+.cart {
+  width: 70px;
+  /* // height:50px; */
+  margin-left: 35px;
+  display: grid;
+  margin-top: 10px;
+  /* //  border:1px solid red; */
+}
+#car {
+  color: black;
+}
+.navprofile p:hover {
+  color: rgb(244, 51, 151);
+  font-weight: bold;
+}
+.navprofile:hover {
+  color: rgb(244, 51, 151);
+}
+.navprofile {
+  width: 70px;
+  /* // height:50px; */
+  margin-left: 35px;
+  display: grid;
+  margin-top: 10px;
+  /* //  border:1px solid red; */
+}
+
+#dropd {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+#eth {
+  margin-left: 30px;
+}
+#elec {
+  margin-right: 35px;
+}
+.down {
+  width: 96%;
+  display: flex;
+
+  /* // visibility: hidden;
+    // justify-content: space-between; */
+  height: auto;
+  margin-left: 27px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.dowp {
+  width: auto;
+  /* // height:auto; */
+  padding: 14px;
+  /* // border:1px solid grey; */
+}
+/* // #eth:hover{
+//     background-color: red;
+  
+//   } */
+h4 {
+  color: rgb(244, 51, 151);
+}
+p {
+  color: grey;
+}
+#divcol {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol1 {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol2 {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol3 {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol4 {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol5 {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol6 {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol7 {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol8 {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol9 {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol10 {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol11 {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol12 {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol13 {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol14 {
+  background-color: rgba(249, 249, 249, 255);
+}
+#divcol15 {
+  background-color: rgba(249, 249, 249, 255);
+}
+.texthover {
+  color: #333333;
+  font-weight: 500;
+}
+.texthover:hover {
+  color: rgb(244, 51, 151);
+  transform: translateY(-0.1em);
+}
+a {
+  text-decoration: none;
+}
