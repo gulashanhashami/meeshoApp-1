@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Meesho-Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## Meesho is a platform in India, where we can buy any type of products using their social networks. And sellers can sell their products.
 
-In the project directory, you can run:
+# Authors
 
-### `npm start`
+- [Amit surendra jangid ](https://github.com/jangidamit358)
+- [Abhishek Singh](https://github.com/sinab06)
+- [Dilshad Ahmad](https://github.com/dilshad09)
+- [ASHISH KUMAR SHAW](https://github.com/ashish-shaw)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Prerequisities
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React.js
+- HTML
+- JavaScipt
+- CSS
+- Material UI
 
-### `npm test`
+# Run Locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- To run this project locally follow following steps below
+- Create folder in your local system
 
-### `npm run build`
+Clone this Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`git pull https://github.com/gulashanhashami/meeshoApp-1.git`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Now the project is ready just go and visit home page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Screenshots
 
-### `npm run eject`
+> HOME PAGE
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![homepage](https://miro.medium.com/max/1400/1*D8VtlEV5uGeuEVMVeIeBuA.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> LOGIN PAGE
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![loginpage](https://miro.medium.com/max/1400/1*ouwzM-xKOTNrcDS90GWMVA.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> PRODUCT PAGE
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![productpage](https://miro.medium.com/max/1400/1*wENayGYA8YXVymp74kvxbQ.png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+> PRODUCT DETAILS PAGE
 
-### Analyzing the Bundle Size
+![productdetailspage](https://miro.medium.com/max/1400/1*Y-C-OKSMb_36QANPijQQgw.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+> CART PAGE
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![cartpage](https://miro.medium.com/max/1400/1*d0W-sLokjhBjktm4h9Jyqg.png)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> BILLING PAGE
 
-### Deployment
+![billingpage](https://miro.medium.com/max/1400/1*bwDjfi7bUHQDOchkUao-FQ.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+> PAYMENT PAGE
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![paymentpage](https://miro.medium.com/max/1400/1*5RQJlsdXeVWtAQEi1ghEhw.png)
+
+
+# What did I Learn
+
+- By end of this project, I am able to learn how effective work can be done as a team when ideas are trajected in multiple spectrums.
+
+- The coordination while presenting the project was a new experience for all the members of the team which was fun driven as well as professional learning.
+
+- Effective learning involves how we were able to suggest constructive feedback on each other’s work and debug before we present our project.
